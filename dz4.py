@@ -27,7 +27,6 @@ def main():
         user_input = input("Enter a command: ")
 
         
-        # Захист від пустого рядка, щоб бот не падав
         if not user_input.strip():
             continue
             
