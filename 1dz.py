@@ -1,9 +1,7 @@
 from pathlib import Path
 
-# Створення об'єкту Path для файлу
 file_path = Path("text.txt")
 
-# Запис тексту у файл
 file_path.write_text("""
 Alex Korp,3000
 Nikita Borisenko,2000
