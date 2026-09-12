@@ -3,6 +3,7 @@ def parse_input(user_input):
     cmd = cmd.strip().lower()
     return cmd, *args
 
+
 def add_contact(args, contacts):
     name, phone = args
     contacts[name] = phone
@@ -12,9 +13,11 @@ def change_contact(args, contacts):
     contacts[name] = phone
     return "change_contact"
 
+
 def show_phone(args, contacts):
     name = args[0]
     return contacts[name]
+
 
 def show_all(contacts):
     return contacts
