@@ -14,7 +14,7 @@ def total_salary(path):
         for el in lines:
             name, salary = el.split(',')
             print(name, salary)
-            total = total + int(salary)
+            total = total + float(salary)
         average = total / len(lines)
         return total, average
 print(total_salary("text.txt"))
